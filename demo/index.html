@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Round Carousel Demo</title>
+
+		<link rel="stylesheet" href="../dist/round-carousel.css" />
+
+		<style>
+			html,
+			body {
+				height: 100%;
+			}
+
+			body {
+				font-family: monospace;
+				font-size: 1rem;
+				line-height: 1.2;
+				display: flex;
+				flex-flow: column wrap;
+				align-items: center;
+				justify-content: center;
+				margin: 0;
+			}
+
+			#carousel {
+				text-align: center;
+				width: 100%;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="carousel"></div>
+
+		<script src="../dist/round-carousel.js"></script>
+
+		<script>
+			new window.RoundCarousel.default(document.getElementById('carousel'), {
+				items: Array(20)
+					.fill('')
+					.map((_, index) => ({
+						alt: 'A random Unsplash photo',
+						image: `https://source.unsplash.com/random/210x210?sig=${Math.floor(Math.random() * 20 * 2)}`,
+						content: `<div><strong>Round Carousel</strong><span>Slide number ${index + 1}</span></div>`
+					}))
+			});
+		</script>
+	</body>
+</html>
