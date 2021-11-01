@@ -37,6 +37,7 @@ yarn.lock
 # Config files
 .github
 .babelrc
+.nowignore
 .nvmrc
 .whitesource
 renovate.json
