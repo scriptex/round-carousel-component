@@ -6,9 +6,9 @@
 		"Slider",
 		"Carousel"
 	],
-	"homepage": "https://atanas.info/projects/round-carousel.html",
+	"homepage": "https://atanas.info/projects/round-carousel-component.html",
 	"bugs": {
-		"url": "https://github.com/scriptex/round-carousel/issues",
+		"url": "https://github.com/scriptex/round-carousel-component/issues",
 		"email": "scriptex.bg@gmail.com"
 	},
 	"license": "MIT",
@@ -32,7 +32,7 @@
 		}
 	],
 	"main": "dist/round-carousel.js",
-	"repository": "https://github.com/scriptex/round-carousel",
+	"repository": "https://github.com/scriptex/round-carousel-component",
 	"scripts": {
 		"css": "cp ./src/round-carousel.css ./dist",
 		"clear": "rm -rf ./dist && mkdir dist",
