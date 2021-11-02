@@ -41,6 +41,7 @@ yarn.lock
 .nvmrc
 .whitesource
 renovate.json
+round-carousel.png
 tslint.json
 tsconfig.json
 postcss.config.js
