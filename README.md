@@ -21,9 +21,65 @@
 [![Renovate App Status][renovateapp-img]][renovateapp-url]
 [![Make A Pull Request][prs-welcome-img]][prs-welcome-url]
 
+![Round Carousel Screenshot](round-carousel.png)
+
+## Install
+
+First install the component using your preferred package manager:
+
+```sh
+npm i round-carousel-component
+
+# or
+
+yarn add round-carousel-component
+```
+
 ## Usage
 
-TODO
+Then import the component in your application. Here is an example:
+
+The slides (or items) should have the following shape:
+
+| Prop      | Type     | Required | Description                                          | Example                                      |
+| --------- | -------- | -------- | ---------------------------------------------------- | -------------------------------------------- |
+| `alt`     | `string` | false    | Alternative text for the slide image                 | 'This is an example alt text'                |
+| `image`   | `string` | true     | Path or URL to an image                              | 'https://source.unsplash.com/random/210x210' |
+| `content` | `string` | true     | An HTML string representing the content of the slide | `<div><strong>Slide Title</strong></div>`    |
+
+```typescript
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+
+import { RoundCarousel, RoundCarouselItem } from 'round-carousel-component';
+
+const node = document.getElementById('carousel');
+
+// Create an array of Carousel Items
+const items: RoundCarouselItem[] = Array(20)
+	.fill('')
+	.map((_, index) => ({
+		alt: 'A random Unsplash photo',
+		image: `https://source.unsplash.com/random/210x210?sig=${Math.floor(Math.random() * 20 * 2)}`,
+		content: `<div><strong>Round Carousel</strong><span>Slide number ${index + 1}</span></div>`
+	}));
+
+new RoundCarousel(node, {
+	items
+});
+```
+
+## Options
+
+The component accepts the following configuration options as props:
+
+| Prop                | Type                | Required | Description                         | Default    |
+| ------------------- | ------------------- | -------- | ----------------------------------- | ---------- |
+| `items`             | `RoundCarouselItem` | true     | An array of `RoundCarouselItem`s    | []         |
+| `itemWidth`         | `number`            | false    | Width of each of the carousel items | 210        |
+| `nextButtonContent` | `string`            | false    | Content of the next button          | 'Next'     |
+| `prevButtonContent` | `string`            | false    | Content of the previous button      | 'Previous' |
+| `showControls`      | `boolean`           | false    | Show/hide navigation controls       | true       |
 
 ## Support this project
 
