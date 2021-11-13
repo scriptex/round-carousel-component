@@ -48,9 +48,6 @@ The slides (or items) should have the following shape:
 | `content` | `string` | true     | An HTML string representing the content of the slide | `<div><strong>Slide Title</strong></div>`    |
 
 ```typescript
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-
 import { RoundCarousel, RoundCarouselItem } from 'round-carousel-component';
 
 const node = document.getElementById('carousel');
