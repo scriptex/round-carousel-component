@@ -35,10 +35,10 @@
 	<body>
 		<div id="carousel"></div>
 
-		<script src="../dist/round-carousel.js"></script>
+		<script type="module">
+			import RoundCarousel from '../dist/round-carousel';
 
-		<script>
-			new window.RoundCarousel.default(document.getElementById('carousel'), {
+			new RoundCarousel(document.getElementById('carousel'), {
 				items: Array(20)
 					.fill('')
 					.map((_, index) => ({
