@@ -43,6 +43,7 @@ _.config.yml
 .npmignore
 .nvmrc
 .whitesource
+postcss.config.js
 renovate.json
 round-carousel.png
 tsconfig.json

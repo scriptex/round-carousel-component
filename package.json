@@ -33,23 +33,26 @@
 	],
 	"main": "dist/round-carousel.js",
 	"types": "dist/round-carousel.d.ts",
+	"style": "dist/round-carousel.css",
 	"repository": "https://github.com/scriptex/round-carousel-component",
 	"scripts": {
-		"css": "cp ./src/round-carousel.css ./dist",
+		"css": "postcss src/round-carousel.css -o dist/round-carousel.css",
 		"clear": "rm -rf ./dist && mkdir dist",
-		"start": "yarn clear && yarn build && parcel demo/index.html --dist-dir demo/dist",
+		"start": "yarn clear && yarn build && parcel demo/index.html --dist-dir demo/dist --no-source-maps",
 		"build": "yarn clear && yarn css && webpack --mode production",
 		"release-minor": "release-it minor --ci",
 		"release-patch": "release-it patch --ci",
 		"release-major": "release-it major --ci",
 		"changelog-local": "npx auto-changelog"
 	},
-	"dependencies": {
-		"release-it": "14.12.5",
-		"touchsweep": "1.2.0"
-	},
+	"dependencies": {},
 	"devDependencies": {
+		"autoprefixer": "10.4.2",
 		"parcel": "2.3.2",
+		"postcss": "8.4.7",
+		"postcss-cli": "9.1.0",
+		"release-it": "14.12.5",
+		"touchsweep": "^1.2.0",
 		"ts-loader": "9.2.7",
 		"typescript": "4.6.2",
 		"webpack": "5.69.1",
@@ -113,5 +116,9 @@
 			"origin": null,
 			"skipChecks": false
 		}
-	}
+	},
+	"browserslist": [
+		"> 1%",
+		"last 2 versions"
+	]
 }
