@@ -47,7 +47,7 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"autoprefixer": "10.4.2",
+		"autoprefixer": "10.4.3",
 		"parcel": "2.3.2",
 		"postcss": "8.4.8",
 		"postcss-cli": "9.1.0",
