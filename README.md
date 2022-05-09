@@ -21,7 +21,7 @@
 [![Renovate App Status][renovateapp-img]][renovateapp-url]
 [![Make A Pull Request][prs-welcome-img]][prs-welcome-url]
 
-![Round Carousel Screenshot](round-carousel.png)
+![Round Carousel Screenshot](https://raw.githubusercontent.com/scriptex/round-carousel-component/master/round-carousel.png)
 
 ## Install
 
