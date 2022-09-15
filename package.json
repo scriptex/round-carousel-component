@@ -51,7 +51,7 @@
 		"parcel": "2.7.0",
 		"postcss": "8.4.16",
 		"postcss-cli": "10.0.0",
-		"release-it": "15.4.1",
+		"release-it": "15.4.2",
 		"touchsweep": "1.3.0",
 		"ts-loader": "9.3.1",
 		"typescript": "4.8.3",
