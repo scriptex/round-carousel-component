@@ -5,16 +5,16 @@ module.exports = {
 		'round-carousel': './src/round-carousel.ts'
 	},
 	output: {
-		path: resolve(__dirname, 'dist'),
+		path: resolve(__dirname, '..', 'dist'),
 		filename: '[name].js',
-		libraryTarget: 'umd',
-		library: 'RoundCarousel',
-		umdNamedDefine: true
+		library: {
+			type: 'umd',
+			name: 'RoundCarousel'
+		}
 	},
 	resolve: {
 		extensions: ['.ts']
 	},
-	devtool: false,
 	module: {
 		rules: [
 			{
@@ -22,6 +22,5 @@ module.exports = {
 				loader: 'ts-loader'
 			}
 		]
-	},
-	target: 'web'
+	}
 };

@@ -3,56 +3,46 @@
 	"version": "1.1.0",
 	"description": "An infinitely scrollable 3D carousel component for the web",
 	"keywords": [
-		"Slider",
-		"Carousel"
+		"3D",
+		"Carousel",
+		"3D Carousel",
+		"3D Component"
 	],
-	"homepage": "https://atanas.info/projects/round-carousel-component.html",
+	"homepage": "https://round-carousel-component.atanas.info",
 	"bugs": {
 		"url": "https://github.com/scriptex/round-carousel-component/issues",
-		"email": "scriptex.bg@gmail.com"
+		"email": "hi@atanas.info"
 	},
 	"license": "MIT",
-	"author": {
-		"name": "Atanas Atanasov",
-		"email": "scriptex.bg@gmail.com",
-		"url": "https://atanas.info"
-	},
-	"funding": [
-		{
-			"type": "individual",
-			"url": "https://www.paypal.me/scriptex"
-		},
-		{
-			"type": "patreon",
-			"url": "https://www.patreon.com/atanas"
-		},
-		{
-			"type": "individual",
-			"url": "https://ko-fi.com/scriptex"
-		}
-	],
+	"author": "Atanas Atanasov <hi@atanas.info> (https://atanas.info)",
+	"funding": "https://github.com/sponsors/scriptex",
 	"main": "dist/round-carousel.js",
-	"types": "dist/round-carousel.d.ts",
 	"style": "dist/round-carousel.css",
-	"repository": "https://github.com/scriptex/round-carousel-component",
+	"types": "dist/round-carousel.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "github:scriptex/round-carousel-component"
+	},
 	"scripts": {
-		"css": "postcss src/round-carousel.css -o dist/round-carousel.css",
-		"clear": "rm -rf ./dist && mkdir dist",
-		"start": "yarn clear && yarn build && parcel demo/index.html --dist-dir demo/dist --no-source-maps",
-		"build": "yarn clear && yarn css && webpack --mode production",
+		"js": "webpack --mode production --config config/webpack.config.js",
+		"css": "postcss src/round-carousel.css -o dist/round-carousel.css -c config",
+		"copy": "cp -r dist demo",
+		"clear": "rm -rf ./dist && rm -rf ./demo/dist",
+		"build": "yarn clear && yarn css && yarn js && yarn copy",
 		"release-minor": "release-it minor --ci",
 		"release-patch": "release-it patch --ci",
 		"release-major": "release-it major --ci",
 		"changelog-local": "npx auto-changelog"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"touchsweep": "1.3.0"
+	},
 	"devDependencies": {
 		"autoprefixer": "10.4.12",
 		"parcel": "2.7.0",
 		"postcss": "8.4.16",
 		"postcss-cli": "10.0.0",
 		"release-it": "15.4.2",
-		"touchsweep": "1.3.0",
 		"ts-loader": "9.4.1",
 		"typescript": "4.8.3",
 		"webpack": "5.74.0",
@@ -63,8 +53,9 @@
 	},
 	"release-it": {
 		"hooks": {
-			"after:release": "yarn changelog-local && git add CHANGELOG.md && git commit -m \"Update CHANGELOG.md with the latest changes\" && git push"
+			"after:release": "yarn changelog-local && git add CHANGELOG.md && git commit -m \"Update CHANGELOG.md with the latest changes\" --no-verify && git push"
 		},
+		"use": "pkg.version",
 		"git": {
 			"changelog": "git log --pretty=format:\"* %s (%h)\" ${from}...${to}",
 			"requireCleanWorkingDir": true,
@@ -74,9 +65,11 @@
 			"addUntrackedFiles": false,
 			"commit": true,
 			"commitMessage": "Release ${version}",
-			"commitArgs": [],
+			"commitArgs": [
+				"--no-verify"
+			],
 			"tag": true,
-			"tagName": null,
+			"tagName": "${version}",
 			"tagAnnotation": "Release ${version}",
 			"tagArgs": [],
 			"push": true,
@@ -85,36 +78,14 @@
 			],
 			"pushRepo": ""
 		},
-		"npm": {
-			"publish": false,
-			"publishPath": ".",
-			"tag": null,
-			"otp": null,
-			"ignoreVersion": false,
-			"skipChecks": false,
-			"timeout": 10
-		},
 		"github": {
-			"release": false,
-			"releaseName": "Release ${version}",
-			"releaseNotes": null,
-			"preRelease": false,
-			"draft": false,
-			"tokenRef": "GITHUB_TOKEN",
-			"assets": null,
-			"host": null,
-			"timeout": 0,
-			"proxy": null,
-			"skipChecks": false
+			"release": false
 		},
 		"gitlab": {
-			"release": false,
-			"releaseName": "Release ${version}",
-			"releaseNotes": null,
-			"tokenRef": "GITLAB_TOKEN",
-			"assets": null,
-			"origin": null,
-			"skipChecks": false
+			"release": false
+		},
+		"npm": {
+			"publish": false
 		}
 	},
 	"browserslist": [
