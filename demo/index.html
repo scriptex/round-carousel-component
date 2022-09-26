@@ -4,25 +4,53 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Round Carousel Demo</title>
 
-		<link rel="stylesheet" href="../dist/round-carousel.css" />
+		<title>Round Carousel Component | Demo</title>
+
+		<link rel="stylesheet" href="dist/round-carousel.css" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css"
+		/>
 
 		<style>
-			html,
-			body {
-				height: 100%;
-			}
-
 			body {
 				font-family: monospace;
-				font-size: 1rem;
-				line-height: 1.2;
 				display: flex;
-				flex-flow: column wrap;
+				flex-flow: row wrap;
 				align-items: center;
 				justify-content: center;
+				align-content: center;
 				margin: 0;
+			}
+
+			.usage {
+				line-height: 1.1;
+				width: 100%;
+				max-width: 50rem;
+				flex: 0 0 100%;
+				padding: 1rem;
+				margin: auto;
+				box-sizing: border-box;
+			}
+
+			.usage p,
+			.usage h1,
+			.usage h2 {
+				margin: 1rem 0;
+			}
+
+			.usage h1 {
+				text-align: center;
+				margin-bottom: 2rem;
+			}
+
+			.usage pre {
+				padding: 0.125rem 1rem;
+				overflow: auto;
+				-webkit-overflow-scrolling: touch;
+				background: linear-gradient(to right, #f0f0f0 0%, #e0e0e0 100%);
 			}
 
 			#carousel {
@@ -30,22 +58,85 @@
 				width: 100%;
 				overflow: hidden;
 			}
+
+			social-links {
+				display: block;
+				padding: 1rem 0;
+			}
 		</style>
+
+		<script
+			src="https://unpkg.com/requirejs"
+			integrity="sha384-9M3Wd+wRkBqNHxK8F7Wg3Xs1Du/JXnCXgVdJ+G6KkYBvGol8vSgEiBdd8+MTaYtk"
+			crossorigin="anonymous"
+		></script>
+
+		<script
+			src="https://unpkg.com/scriptex-socials"
+			async
+			integrity="sha384-FDS8WECJvE4bGb+arLPh3DSv0mrVHD+hJRf+UaM6rVMT+wBleSgUlog90rrtgHH1"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body>
+		<a
+			href="https://github.com/scriptex/round-carousel-component"
+			title="See code on Github"
+			class="github-fork-ribbon"
+			data-ribbon="See code on Github"
+		>
+			See code on Github
+		</a>
+
+		<div class="usage">
+			<h1>Round Carousel Component</h1>
+
+			<h2>Install</h2>
+
+			<pre><code>
+npm install round-carousel-component
+
+# or
+
+yarn add round-carousel-component
+			</code></pre>
+
+			<h2>Use the module</h2>
+
+			<pre><code>
+
+import { RoundCarousel, RoundCarouselItem } from 'round-carousel-component';
+
+// Create an array of RoundCarousel items
+const items: RoundCarouselItem[] = Array(20)
+  .fill('')
+  .map((_: string, index: number) => ({
+	alt: 'A random Unsplash photo',
+	image: `https://picsum.photos/${210 + index}`,
+	content: `&lt;div&gt;&lt;strong&gt;Round Carousel&lt;/strong&gt;&lt;span&gt;Slide number ${index + 1}&lt;/span&gt;&lt;/div&gt;`
+  }));
+
+new RoundCarousel(document.getElementById('carousel'), {
+	items
+});
+        </code></pre>
+		</div>
+
 		<div id="carousel"></div>
 
-		<script type="module">
-			import RoundCarousel from '../dist/round-carousel';
+		<social-links></social-links>
 
-			new RoundCarousel(document.getElementById('carousel'), {
-				items: Array(20)
-					.fill('')
-					.map((_, index) => ({
-						alt: 'A random Unsplash photo',
-						image: `https://source.unsplash.com/random/210x210?sig=${Math.floor(Math.random() * 20 * 2)}`,
-						content: `<div><strong>Round Carousel</strong><span>Slide number ${index + 1}</span></div>`
-					}))
+		<script type="module">
+			require(['./dist/round-carousel.js'], ({ RoundCarousel }) => {
+				new RoundCarousel(document.getElementById('carousel'), {
+					items: Array(20)
+						.fill('')
+						.map((_, index) => ({
+							alt: 'A random Unsplash photo',
+							image: `https://picsum.photos/${210 + index}`,
+							content: `<div><strong>Round Carousel</strong><span>Slide number ${index + 1}</span></div>`
+						}))
+				});
 			});
 		</script>
 	</body>
