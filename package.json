@@ -35,7 +35,7 @@
 		"changelog-local": "npx auto-changelog"
 	},
 	"dependencies": {
-		"touchsweep": "1.3.0"
+		"touchsweep": "2.0.0"
 	},
 	"devDependencies": {
 		"autoprefixer": "10.4.12",
@@ -49,7 +49,7 @@
 		"webpack-cli": "4.10.0"
 	},
 	"peerDependencies": {
-		"touchsweep": "^1.2.0"
+		"touchsweep": "^1.2.0 || ^2.0.0"
 	},
 	"release-it": {
 		"hooks": {
