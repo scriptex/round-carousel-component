@@ -38,7 +38,7 @@
 		"touchsweep": "2.1.0"
 	},
 	"devDependencies": {
-		"autoprefixer": "10.4.14",
+		"autoprefixer": "10.4.15",
 		"parcel": "2.9.3",
 		"postcss": "8.4.27",
 		"postcss-cli": "10.1.0",
