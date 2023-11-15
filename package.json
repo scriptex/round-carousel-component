@@ -43,7 +43,7 @@
 		"postcss": "8.4.31",
 		"postcss-cli": "10.1.0",
 		"release-it": "17.0.0",
-		"ts-loader": "9.5.0",
+		"ts-loader": "9.5.1",
 		"typescript": "5.2.2",
 		"webpack": "5.89.0",
 		"webpack-cli": "5.1.4"
