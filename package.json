@@ -39,7 +39,7 @@
 	},
 	"devDependencies": {
 		"autoprefixer": "10.4.16",
-		"parcel": "2.10.3",
+		"parcel": "2.11.0",
 		"postcss": "8.4.32",
 		"postcss-cli": "11.0.0",
 		"release-it": "17.0.1",
