@@ -42,7 +42,7 @@
 		"parcel": "2.11.0",
 		"postcss": "8.4.35",
 		"postcss-cli": "11.0.0",
-		"release-it": "17.0.3",
+		"release-it": "17.0.5",
 		"ts-loader": "9.5.1",
 		"typescript": "5.3.3",
 		"webpack": "5.90.2",
