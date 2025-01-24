@@ -3525,10 +3525,10 @@ registry-url@^6.0.1:
   dependencies:
     rc "1.2.8"
 
-release-it@18.1.1:
-  version "18.1.1"
-  resolved "https://registry.yarnpkg.com/release-it/-/release-it-18.1.1.tgz#263f0dc67a6b2209b072528444a49cb0fa7ae015"
-  integrity sha512-rC/iVKri7U/Kp/Myujmsf7HG2gPq8My/LBVB72TbZZYKD14fmgDZC4Eyn8DD7Yh2h/G/YCCsRe1QQPrjXj9Mzg==
+release-it@18.1.2:
+  version "18.1.2"
+  resolved "https://registry.yarnpkg.com/release-it/-/release-it-18.1.2.tgz#33db1dc22daaf36e48ccd6cf986216625fb34868"
+  integrity sha512-HOVRcicehCgoCsPFOu0iCBlEC8GDOoKS5s6ICkWmqomGEoZtRQ88D3RCsI5MciSU8vAQU+aWZW2z57NQNNb74w==
   dependencies:
     "@iarna/toml" "2.2.5"
     "@octokit/rest" "21.0.2"
@@ -3550,7 +3550,7 @@ release-it@18.1.1:
     proxy-agent "6.5.0"
     semver "7.6.3"
     shelljs "0.8.5"
-    undici "6.21.0"
+    undici "6.21.1"
     update-notifier "7.3.1"
     url-join "5.0.0"
     wildcard-match "5.1.4"
@@ -3931,10 +3931,10 @@ touchsweep@2.2.0:
   resolved "https://registry.yarnpkg.com/touchsweep/-/touchsweep-2.2.0.tgz#4b6ccc88029ce368303efb5c851081c87ec25213"
   integrity sha512-BrcLBLGPlSakFtfAOW7xw9NziVtVGqyp8KU+GqCITQYvA0T2P+2/QoMi05PdbjeXdxTTST021pTjHmav4UNX9w==
 
-ts-loader@9.5.1:
-  version "9.5.1"
-  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-9.5.1.tgz#63d5912a86312f1fbe32cef0859fb8b2193d9b89"
-  integrity sha512-rNH3sK9kGZcH9dYzC7CewQm4NtxJTjSEVRJ2DyBZR7f8/wcta+iV44UPCXc5+nzDzivKtlzV6c9P4e+oFhDLYg==
+ts-loader@9.5.2:
+  version "9.5.2"
+  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-9.5.2.tgz#1f3d7f4bb709b487aaa260e8f19b301635d08020"
+  integrity sha512-Qo4piXvOTWcMGIgRiuFa6nHNm+54HbYaZCKqc9eeZCLRy3XqafQgwX2F7mofrbJG3g7EEb+lkiR+z2Lic2s3Zw==
   dependencies:
     chalk "^4.1.0"
     enhanced-resolve "^5.0.0"
@@ -3972,10 +3972,10 @@ typescript@5.7.3:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.7.3.tgz#919b44a7dbb8583a9b856d162be24a54bf80073e"
   integrity sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==
 
-undici@6.21.0:
-  version "6.21.0"
-  resolved "https://registry.yarnpkg.com/undici/-/undici-6.21.0.tgz#4b3d3afaef984e07b48e7620c34ed8a285ed4cd4"
-  integrity sha512-BUgJXc752Kou3oOIuU1i+yZZypyZRqNPW0vqoMPl8VaoalSfeR0D8/t4iAS3yirs79SSMTxTag+ZC86uswv+Cw==
+undici@6.21.1:
+  version "6.21.1"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-6.21.1.tgz#336025a14162e6837e44ad7b819b35b6c6af0e05"
+  integrity sha512-q/1rj5D0/zayJB2FraXdaWxbhWiNKDvu8naDT2dl1yTlvJp4BLtOcp2a5BvgGNQpYYJzau7tf1WgKv3b+7mqpQ==
 
 unicorn-magic@^0.1.0:
   version "0.1.0"

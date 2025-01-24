@@ -42,8 +42,8 @@
 		"parcel": "2.13.3",
 		"postcss": "8.4.49",
 		"postcss-cli": "11.0.0",
-		"release-it": "18.1.1",
-		"ts-loader": "9.5.1",
+		"release-it": "18.1.2",
+		"ts-loader": "9.5.2",
 		"typescript": "5.7.3",
 		"webpack": "5.97.1",
 		"webpack-cli": "6.0.1"
