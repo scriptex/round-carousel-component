@@ -2992,10 +2992,10 @@ regenerator-runtime@^0.14.1:
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.14.1.tgz#356ade10263f685dda125100cd862c1db895327f"
   integrity sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==
 
-release-it@19.2.1:
-  version "19.2.1"
-  resolved "https://registry.yarnpkg.com/release-it/-/release-it-19.2.1.tgz#3943bfbbbdc7af2f09502077b565accbcb7dce3e"
-  integrity sha512-Tu9kZKtCJkrLG6nD0OLbVdVP8wHgpQBpRvtZQmdEgGHDwg0FiiHmdnnPskTQllPWJFMtpHo3O7MHtr8/AWEFbA==
+release-it@19.2.3:
+  version "19.2.3"
+  resolved "https://registry.yarnpkg.com/release-it/-/release-it-19.2.3.tgz#af2e96752bfcf4d0c08f53e4928e3493b54c618d"
+  integrity sha512-GTSfrKb0cPmssEFliX0+WQBHC6NiDsMR/M8Y2tkvct/TO36BjB5XV6LO5BUTYV12C3+f78Y8aroku7jCyNiDeA==
   dependencies:
     "@nodeutils/defaults-deep" "1.1.0"
     "@octokit/rest" "22.0.1"
