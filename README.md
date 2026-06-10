@@ -1,9 +1,8 @@
 [![Github Build](https://github.com/scriptex/round-carousel-component/workflows/Build/badge.svg)](https://github.com/scriptex/round-carousel-component/actions?query=workflow%3ABuild)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/34d3d75710534dc6a38c3584a1dcd068)](https://www.codacy.com/gh/scriptex/round-carousel-component/dashboard?utm_source=github.com&utm_medium=referral&utm_content=scriptex/round-carousel-component&utm_campaign=Badge_Grade)
-[![Codebeat Badge](https://codebeat.co/badges/d765a4c8-2c0e-44f2-89c3-fa364fdc14e6)](https://codebeat.co/projects/github-com-scriptex-round-carousel-component-master)
 [![CodeFactor Badge](https://www.codefactor.io/repository/github/scriptex/round-carousel-component/badge)](https://www.codefactor.io/repository/github/scriptex/round-carousel-component)
 [![DeepScan grade](https://deepscan.io/api/teams/3574/projects/5257/branches/40799/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=3574&pid=5257&bid=40799)
-[![Analytics](https://ga-beacon-361907.ew.r.appspot.com/UA-83446952-1/github.com/scriptex/round-carousel-component/README.md?pixel)](https://github.com/scriptex/round-carousel-component/)
+[![Analytics](https://ga-beacon.atanas.info/api/analytics?account=UA-83446952-1&page=GitHub.com/scriptex/round-carousel-component&pixel)](https://github.com/scriptex/round-carousel-component/)
 
 # Round Carousel
 
