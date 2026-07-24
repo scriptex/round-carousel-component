@@ -40,7 +40,7 @@
 	"devDependencies": {
 		"autoprefixer": "10.5.4",
 		"parcel": "2.16.4",
-		"postcss": "8.5.22",
+		"postcss": "8.5.23",
 		"postcss-cli": "11.0.1",
 		"release-it": "20.2.1",
 		"ts-loader": "9.6.2",
